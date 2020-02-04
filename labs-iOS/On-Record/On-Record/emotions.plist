@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>choices</key>
+		<array>
+			<string>Apprehensive</string>
+			<string>Unsettled</string>
+			<string>Jittery</string>
+			<string>Distressed</string>
+			<string>Exasperated</string>
+			<string>Embarrassed</string>
+			<string>Speechless</string>
+		</array>
+		<key>type</key>
+		<string>Eeeek</string>
+	</dict>
+	<dict>
+		<key>choices</key>
+		<array>
+			<string>Afraid</string>
+			<string>Melancholic</string>
+			<string>Sulky</string>
+			<string>Crestfallen</string>
+			<string>Envious</string>
+			<string>Okay?</string>
+		</array>
+		<key>type</key>
+		<string>Sad</string>
+	</dict>
+	<dict>
+		<key>choices</key>
+		<array>
+			<string>Stressed</string>
+			<string>Livid</string>
+			<string>Miffed</string>
+			<string>Bitter</string>
+			<string>Cross</string>
+			<string>Incensed</string>
+			<string>Resentful</string>
+			<string>Uninterested</string>
+			<string>Drained</string>
+		</array>
+		<key>type</key>
+		<string>Bad</string>
+	</dict>
+</array>
+</plist>
