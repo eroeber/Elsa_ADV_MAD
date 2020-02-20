@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Apple</string>
+	<string>Arugula</string>
+	<string>Avocado</string>
+	<string>Bacon</string>
+	<string>BBQ Chicken</string>
+	<string>BBQ Pork</string>
+	<string>Beetroot</string>
+	<string>Black Bean Spread</string>
+	<string>Brie Cheese</string>
+	<string>Carrot</string>
+	<string>Cheddar Cheese</string>
+	<string>Chicken</string>
+	<string>Chicken Salad</string>
+	<string>Chicken Tikka</string>
+	<string>Chickpea Mayo</string>
+	<string>Chili Jam</string>
+	<string>Chutney</string>
+	<string>Cranberry Sauce</string>
+	<string>Cream Cheese</string>
+	<string>Coleslaw</string>
+	<string>Cucumber</string>
+	<string>Egg</string>
+	<string>Egg Salad</string>
+	<string>Feta Cheese</string>
+	<string>Fig</string>
+	<string>Goat Cheese</string>
+	<string>Ham</string>
+	<string>Honey</string>
+	<string>Hummus</string>
+	<string>Honey Mustard</string>
+	<string>Mango Chutney</string>
+	<string>Mayo</string>
+	<string>Mustard</string>
+	<string>Nutella</string>
+	<string>Onion</string>
+	<string>Peanut Butter</string>
+	<string>Pear</string>
+	<string>Pepperoni</string>
+	<string>Pesto</string>
+	<string>Pickle</string>
+	<string>Pickled Cabbage</string>
+	<string>Pineapple</string>
+	<string>Potato Chips</string>
+	<string>Pretzel Sticks</string>
+	<string>Prosciutto</string>
+	<string>Raisins</string>
+	<string>Roast Beef</string>
+	<string>Roasted Red Pepper</string>
+	<string>Sausage</string>
+	<string>Sliced Steak</string>
+	<string>Smoked Salmon</string>
+	<string>Spicy Mayo</string>
+	<string>Sweet Corn</string>
+	<string>Tomato</string>
+	<string>Turkey</string>
+	<string>Turkey Salad</string>
+	<string>Tuna</string>
+</array>
+</plist>

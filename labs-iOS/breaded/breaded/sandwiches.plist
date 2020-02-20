@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>sandwich</key>
+		<string>Caprese</string>
+		<key>ingredients</key>
+		<array>
+			<string>Mozzarella</string>
+			<string>Tomato</string>
+			<string>Pesto</string>
+			<string>Ciabatta</string>
+		</array>
+	</dict>
+	<dict>
+		<key>sandwich</key>
+		<string>Breakfast Lettuce &amp; Tomato</string>
+		<key>ingredients</key>
+		<array>
+			<string>Tomato</string>
+			<string>Avocado</string>
+			<string>Lettuce</string>
+			<string>Bacon</string>
+		</array>
+	</dict>
+	<dict>
+		<key>sandwich</key>
+		<string>Boring Please</string>
+		<key>ingredients</key>
+		<array>
+			<string>Peanut Butter</string>
+			<string>Jelly</string>
+			<string>Pretzel Sticks</string>
+		</array>
+	</dict>
+</array>
+</plist>
