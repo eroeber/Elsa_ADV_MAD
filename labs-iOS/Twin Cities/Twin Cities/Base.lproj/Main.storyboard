@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Twin_Cities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A world of twin cities!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uy-O3-qQN">
+                                <rect key="frame" x="79.666666666666686" y="89" width="255" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which one is cooler?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb6-tA-dl7">
+                                <rect key="frame" x="100.66666666666669" y="135" width="213" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3SX-Rk-Nwm">
+                                <rect key="frame" x="107" y="170" width="200" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NNn-zp-6Sy"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="S93-VX-aGf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UgJ-a1-U2u"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcD-Ky-03n">
+                                <rect key="frame" x="164" y="421" width="86" height="30"/>
+                                <state key="normal" title="Temp Check"/>
+                                <connections>
+                                    <action selector="checkTemps:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NA7-uX-FGa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a pair of twins" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBR-Sy-N5z">
+                                <rect key="frame" x="20" y="466" width="374" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iBR-Sy-N5z" firstAttribute="top" secondItem="XcD-Ky-03n" secondAttribute="bottom" constant="10" id="3Bh-Al-hxX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iBR-Sy-N5z" secondAttribute="trailing" constant="20" id="6pc-kX-7Dg"/>
+                            <constraint firstItem="Eb6-tA-dl7" firstAttribute="top" secondItem="4Uy-O3-qQN" secondAttribute="bottom" constant="12" id="8rn-sR-5Uv"/>
+                            <constraint firstItem="iBR-Sy-N5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9mX-Dv-hy1"/>
+                            <constraint firstItem="iBR-Sy-N5z" firstAttribute="top" secondItem="XcD-Ky-03n" secondAttribute="bottom" constant="15" id="Dhe-mu-JG6"/>
+                            <constraint firstItem="3SX-Rk-Nwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F3P-EY-dsC"/>
+                            <constraint firstItem="3SX-Rk-Nwm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="YMo-oT-7MZ"/>
+                            <constraint firstItem="iBR-Sy-N5z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z2K-ea-h2U"/>
+                            <constraint firstItem="Eb6-tA-dl7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z2j-g3-cEb"/>
+                            <constraint firstItem="4Uy-O3-qQN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="epU-6X-Se5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iBR-Sy-N5z" secondAttribute="trailing" constant="20" id="hmG-Zr-Yvz"/>
+                            <constraint firstItem="4Uy-O3-qQN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="hrq-kS-OL1"/>
+                            <constraint firstItem="XcD-Ky-03n" firstAttribute="top" secondItem="3SX-Rk-Nwm" secondAttribute="bottom" constant="35" id="jTB-IK-n0u"/>
+                            <constraint firstItem="XcD-Ky-03n" firstAttribute="top" secondItem="4Uy-O3-qQN" secondAttribute="bottom" constant="100" id="mza-sB-x1H"/>
+                            <constraint firstItem="3SX-Rk-Nwm" firstAttribute="top" secondItem="Eb6-tA-dl7" secondAttribute="bottom" constant="8" id="od6-TT-2Mr"/>
+                            <constraint firstItem="iBR-Sy-N5z" firstAttribute="top" secondItem="XcD-Ky-03n" secondAttribute="bottom" constant="15" id="rwv-hp-Fnd"/>
+                            <constraint firstItem="XcD-Ky-03n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uXG-Bo-w7E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XcD-Ky-03n" secondAttribute="trailing" constant="50" id="wdE-yb-NCF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hmG-Zr-Yvz"/>
+                                <exclude reference="wdE-yb-NCF"/>
+                                <exclude reference="YMo-oT-7MZ"/>
+                                <exclude reference="mza-sB-x1H"/>
+                                <exclude reference="3Bh-Al-hxX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="6pc-kX-7Dg"/>
+                                <include reference="hmG-Zr-Yvz"/>
+                                <include reference="wdE-yb-NCF"/>
+                                <exclude reference="F3P-EY-dsC"/>
+                                <include reference="YMo-oT-7MZ"/>
+                                <exclude reference="jTB-IK-n0u"/>
+                                <include reference="mza-sB-x1H"/>
+                                <exclude reference="uXG-Bo-w7E"/>
+                                <include reference="3Bh-Al-hxX"/>
+                                <exclude reference="9mX-Dv-hy1"/>
+                                <exclude reference="Dhe-mu-JG6"/>
+                                <exclude reference="Z2K-ea-h2U"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cityPicker" destination="3SX-Rk-Nwm" id="esV-X0-ZTG"/>
+                        <outlet property="resultLabel" destination="iBR-Sy-N5z" id="TT0-9x-apH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
