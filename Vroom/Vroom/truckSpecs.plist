@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Zombie</string>
+		<key>details</key>
+		<array>
+			<string>2013</string>
+			<string>118</string>
+			<string>661</string>
+			<string>&quot;Thriller&quot;  by Michael Jackson</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Extermigator</string>
+		<key>details</key>
+		<array>
+			<string>2014</string>
+			<string>110</string>
+			<string>306</string>
+			<string>&quot;Canto 34&quot; by Five Finger Death Punch</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Grave Digger</string>
+		<key>details</key>
+		<array>
+			<string>1982</string>
+			<string>149</string>
+			<string>238</string>
+			<string>&quot;Bad to the Bone&quot; by George Thorogood and the Destroyers</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Alien Invasion</string>
+		<key>details</key>
+		<array>
+			<string>2016</string>
+			<string>114</string>
+			<string>494</string>
+			<string>&quot;The Twilight Zone&quot; remix by Invidious</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hotsy</string>
+		<key>details</key>
+		<array>
+			<string>2009</string>
+			<string>114</string>
+			<string>358</string>
+			<string>&quot;Sugarcoat&quot; by Breaking Benjamin</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Great Clips Mohawk Warrior</string>
+		<key>details</key>
+		<array>
+			<string>2010</string>
+			<string>109</string>
+			<string>156</string>
+			<string>&quot;A Warrior&apos;s Call&quot; by Volbeat</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Toro Loco</string>
+		<key>details</key>
+		<array>
+			<string>2001</string>
+			<string>172</string>
+			<string>386</string>
+			<string>&quot;Misirlou&quot; by Dick Dale</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Toro Loco Ice</string>
+		<key>details</key>
+		<array>
+			<string>2019</string>
+			<string>172</string>
+			<string>313</string>
+			<string>&quot;Misirlou&quot; by Dick Dale</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ice Cream Man</string>
+		<key>details</key>
+		<array>
+			<string>2012</string>
+			<string>180</string>
+			<string>693</string>
+			<string>&quot;Ice Cream Paint Job&quot; by Dorrough</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Just Get Er Done 2</string>
+		<key>details</key>
+		<array>
+			<string>2018</string>
+			<string>148</string>
+			<string>153</string>
+			<string>&quot;Re-Education (Through Labor)&quot; by Rise Against</string>
+		</array>
+	</dict>
+</array>
+</plist>
