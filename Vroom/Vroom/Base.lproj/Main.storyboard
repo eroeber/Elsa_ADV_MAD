@@ -74,7 +74,7 @@
                                     <constraint firstAttribute="height" constant="200" id="Td2-xO-Krr"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SY-is-PYC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4SY-is-PYC">
                                 <rect key="frame" x="230" y="100" width="58" height="120"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -291,8 +291,9 @@
                                 <rect key="frame" x="67" y="409" width="125" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYZ-dl-Lot">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYZ-dl-Lot">
                                 <rect key="frame" x="223" y="409" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAS-bp-FhE">
                                 <rect key="frame" x="67" y="565" width="125" height="125"/>
@@ -324,7 +325,6 @@
                             <constraint firstItem="8uS-9q-M18" firstAttribute="bottom" secondItem="MAs-Vf-4rF" secondAttribute="bottom" constant="15" id="6mS-KW-qHE"/>
                             <constraint firstItem="JXQ-Pe-NPc" firstAttribute="centerX" secondItem="ETY-8H-jYA" secondAttribute="centerX" id="Mnv-bW-I4J"/>
                             <constraint firstItem="MAs-Vf-4rF" firstAttribute="centerX" secondItem="ETY-8H-jYA" secondAttribute="centerX" id="d4C-Rr-hlM"/>
-                            <constraint firstItem="8uS-9q-M18" firstAttribute="trailing" secondItem="SYZ-dl-Lot" secondAttribute="trailing" constant="66" id="wFP-HG-1ch"/>
                             <constraint firstItem="JXQ-Pe-NPc" firstAttribute="top" secondItem="8uS-9q-M18" secondAttribute="top" constant="20" id="x1k-fR-fys"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8uS-9q-M18"/>
