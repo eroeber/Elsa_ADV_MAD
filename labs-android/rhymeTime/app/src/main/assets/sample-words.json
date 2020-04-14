@@ -1,0 +1,48 @@
+{
+  "word": "example",
+  "definitions": [
+    {
+      "definition": "a representative form or pattern",
+      "partOfSpeech": "noun"
+    },
+    {
+      "definition": "something to be imitated",
+      "partOfSpeech": "noun"
+    },
+    {
+      "definition": "an occurrence of something",
+      "partOfSpeech": "noun"
+    },
+    {
+      "definition": "an item of information that is typical of a class or group",
+      "partOfSpeech": "noun"
+    },
+    {
+      "definition": "punishment intended as a warning to others",
+      "partOfSpeech": "noun"
+    },
+    {
+      "definition": "a task performed or problem solved in order to develop skill or understanding",
+      "partOfSpeech": "noun"
+    }
+  ],
+  "rhymes": {
+    "all": [
+      "ample",
+      "example",
+      "sample",
+      "trample",
+      "for example",
+      "good example",
+      "random sample",
+      "bad example",
+      "classic example",
+      "experimental sample",
+      "floor sample",
+      "head sample",
+      "pit sample",
+      "pseudo example",
+      "trial sample"
+    ]
+  }
+}
