@@ -4,16 +4,23 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class SearchResponse(
-    val results: Set<Words>,
-    val number: Int,
-    val totalResults: Int
+//    val word: String,
+//    val rhymes: Rhymes,
+    val results: Set<Words> // umm not sure what to do here ugh
 )
 
 @JsonClass(generateAdapter = true)
+data class Rhymes(
+    val all: Set<String>
+)
+
+
+
+@JsonClass(generateAdapter = true)
 data class Words(
-    val word: String,
-    val definitions: Set<Definitions>,
-    val rhymes: Rhymes
+    val word: String?,
+    val definitions: Set<Definitions>?,
+    val rhymes: Rhymes?
 )
 
 @JsonClass(generateAdapter = true)
@@ -22,7 +29,3 @@ data class Definitions(
     val partOfSpeech: String
 )
 
-@JsonClass(generateAdapter = true)
-data class Rhymes(
-    val all: Set<String>
-)

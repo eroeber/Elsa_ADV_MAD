@@ -46,8 +46,10 @@ class WordDetailFragment : Fragment() {
             Log.i("wordLogging", "Selected word rhymes: ${it.rhymes}")
 
             val wordList = mutableListOf<String>()
-            for(word in it.rhymes.all){
-                wordList.add(word)
+            if(it.rhymes != null){
+                for(word in it.rhymes.all){
+                    wordList.add(word)
+                }
             }
 
             rhymeListView.adapter = RhymesRecyclerAdapter(requireContext(), wordList)
