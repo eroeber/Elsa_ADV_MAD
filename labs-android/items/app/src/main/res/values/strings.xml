@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">items</string>
+    <string name="title">Yay! Tasks!</string>
+    <string name="directions">Enter in a task, press the add button to add it to your list. Long press to remove it when finished!</string>
+    <string name="current">Current to-do list items:</string>
+    <string name="button">ADD</string>
+    <string name="editText">New Task...</string>
+    <string name="urgent">Urgent!</string>
+    <string name="noturgent">Not urgent</string>
+</resources>
