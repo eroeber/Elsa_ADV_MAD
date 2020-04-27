@@ -9,11 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.to_do_item.view.*
 import org.w3c.dom.Text
 
-class recyclerAdapter(var taskList: MutableList<ToDoItem>) : RecyclerView.Adapter<recyclerAdapter.itemViewHolder>() {
+class recyclerAdapter(var taskList: MutableList<ToDoItem>, val itemListener: MainActivity) : RecyclerView.Adapter<recyclerAdapter.itemViewHolder>() {
 
     class itemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val imageView: ImageView = itemView.findViewById(R.id.item_id)
         val textView: TextView =  itemView.findViewById(R.id.task_textView)
+        val dateView: TextView = itemView.findViewById(R.id.textView2)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): itemViewHolder {
@@ -31,7 +32,12 @@ class recyclerAdapter(var taskList: MutableList<ToDoItem>) : RecyclerView.Adapte
 
         holder.imageView.setImageResource(currentItem.imageSrc)
         holder.textView.text = currentItem.toDoText
-    }
+        holder.dateView.text = "Date added: ${currentItem.dateAdded.toString()}"
 
+        holder.itemView.setOnLongClickListener( View.OnLongClickListener{
+            itemListener.onTaskLongClick(currentItem)
+            return@OnLongClickListener true
+        })
+    }
 
 }

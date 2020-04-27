@@ -7,6 +7,7 @@ import com.example.items.database.ToDoItem
 import com.example.items.database.to_doDAO
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
 class TaskRepository(val app: Application) {
@@ -25,6 +26,12 @@ class TaskRepository(val app: Application) {
             toDoDAO.insertTask(task.getRoomTask())
             Log.i("TASK ADDING:", "adding task ${task}")
 
+        }
+    }
+
+    fun removeTask(id: String){
+        CoroutineScope(Dispatchers.IO).async{
+            toDoDAO.removeTask(id)
         }
     }
 }

@@ -13,4 +13,7 @@ interface to_doDAO {
 
     @Query("SELECT * FROM toDo_table")
     fun getAllTasks(): LiveData<List<ToDoItem>>
+
+    @Query("DELETE FROM toDo_table WHERE toDoText = :id")
+    fun removeTask(id: String)
 }
