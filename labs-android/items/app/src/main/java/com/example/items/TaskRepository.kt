@@ -21,15 +21,15 @@ class TaskRepository(val app: Application) {
 
     val  taskRoomList: LiveData<List<ToDoItem>> = toDoDAO.getAllTasks()
 
-    fun addTask(task: com.example.items.ToDoItem){
+    fun addTask(task: ToDoItem){
         CoroutineScope(Dispatchers.IO).launch {
-            toDoDAO.insertTask(task.getRoomTask())
+            toDoDAO.insertTask(task)
             Log.i("TASK ADDING:", "adding task ${task}")
 
         }
     }
 
-    fun removeTask(id: String){
+    fun removeTask(id: Int){
         CoroutineScope(Dispatchers.IO).async{
             toDoDAO.removeTask(id)
         }

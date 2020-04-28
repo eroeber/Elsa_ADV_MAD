@@ -7,7 +7,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.observe
 import androidx.recyclerview.widget.RecyclerView
+import com.example.items.database.ToDoItem
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -30,8 +33,9 @@ class MainActivity : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.editText)
 
         taskRecyclerView = findViewById(R.id.task_recycler_view)
-        adapter = recyclerAdapter(taskVM.taskList, this)
-        taskRecyclerView.adapter = adapter
+//        adapter = recyclerAdapter(emptyList<ToDoItem>())
+//        taskRecyclerView.adapter = adapter
+
 
 
 
@@ -43,17 +47,20 @@ class MainActivity : AppCompatActivity() {
 
 
             myTestList()
-
-            adapter.taskList = taskVM.taskList
-            //adapter.notifyDataSetChanged()
-
         }
+
+        adapter = recyclerAdapter(mutableListOf(), this)
+        taskRecyclerView.adapter = adapter
+        taskVM.taskList.observe(this, androidx.lifecycle.Observer {
+            adapter.taskList = it as MutableList<ToDoItem>
+            adapter.notifyDataSetChanged()
+        })
 
     }
 
     private fun myTestList(){
         val drawable = R.drawable.to_do_icon
-        val item = ToDoItem(0, drawable, taskText, java.util.Date(), false)
+        val item = ToDoItem(image_src = drawable, toDoText = taskText, dateAdded = Date(), urgency = false)
         taskVM.addTask(item)
 
     }
@@ -64,10 +71,8 @@ class MainActivity : AppCompatActivity() {
             .setCancelable(false)
             // positive button and action
             .setPositiveButton("YES"){dialog, which ->
-                taskVM.removeTask(task.toDoText)
+                taskVM.removeTask(task.task_id)
 
-                adapter.taskList = taskVM.taskList
-                adapter.notifyDataSetChanged()
 
                 Toast.makeText(this,"Task removed from to-dos!", Toast.LENGTH_SHORT).show()
                 dialog.dismiss()

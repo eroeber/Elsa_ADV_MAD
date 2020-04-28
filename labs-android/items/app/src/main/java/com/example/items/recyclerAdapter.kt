@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.items.database.ToDoItem
 import kotlinx.android.synthetic.main.to_do_item.view.*
 import org.w3c.dom.Text
 
@@ -30,7 +31,7 @@ class recyclerAdapter(var taskList: MutableList<ToDoItem>, val itemListener: Mai
     override fun onBindViewHolder(holder: itemViewHolder, position: Int) {
         val currentItem = taskList[position]
 
-        holder.imageView.setImageResource(currentItem.imageSrc)
+        holder.imageView.setImageResource(currentItem.image_src)
         holder.textView.text = currentItem.toDoText
         holder.dateView.text = "Date added: ${currentItem.dateAdded.toString()}"
 
