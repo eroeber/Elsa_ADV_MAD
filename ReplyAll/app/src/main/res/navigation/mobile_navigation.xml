@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.replyall.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_build_message"
+            app:destination="@id/build_message" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_done"
+        android:name="com.example.replyall.ui.done.DoneFragment"
+        android:label="@string/title_done"
+        tools:layout="@layout/fragment_done" />
+
+    <fragment
+        android:id="@+id/navigation_build"
+        android:name="com.example.replyall.ui.buildMessage.buildFragment"
+        android:label="@string/title_build"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/build_message"
+        android:name="com.example.replyall.ui.buildMessage.buildFragment"
+        android:label="build_message"
+        tools:layout="@layout/fragment_how" >
+        <action
+            android:id="@+id/action_build_message_to_navigation_done"
+            app:destination="@id/navigation_done" />
+    </fragment>
+</navigation>
