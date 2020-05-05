@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ReplyAll</string>
-    <string name="title_home">Home</string>
-    <string name="title_done">Done</string>
-    <string name="title_build">Build</string>
+    <string name="title_home">REPLY ALL</string>
+    <string name="title_done">Done!L</string>
+    <string name="title_build">Build Response</string>
     <string name="build_fragment">build fragment</string>
     <string name="how_are_you">How are you?</string>
     <string name="what_are_you_doing_today">What are you doing today?</string>
@@ -47,4 +47,6 @@
     <string name="adverb">adverb...</string>
     <string name="happen_since_we_last_chatted">happen since we last chatted?</string>
     <string name="adjective">adjective...</string>
+    <string name="reply_all" />
+    <string name="turns_out">. Turns out</string>
 </resources>

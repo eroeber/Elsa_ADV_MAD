@@ -21,11 +21,10 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:text="@string/reply"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView8"
@@ -114,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        android:text="@string/for_a_few_days_but_haven_t_yet"
+        android:text="@string/turns_out"
         app:layout_constraintStart_toEndOf="@+id/doing_pn_1"
         app:layout_constraintTop_toBottomOf="@+id/doing_verb_2" />
 

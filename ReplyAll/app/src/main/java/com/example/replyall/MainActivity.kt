@@ -1,6 +1,7 @@
 package com.example.replyall
 
 import android.os.Bundle
+import android.widget.ImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
@@ -13,6 +14,7 @@ import androidx.navigation.ui.setupWithNavController
 class MainActivity : AppCompatActivity(), FragmentManager.OnBackStackChangedListener {
 
     private lateinit var navController : NavController
+    private lateinit var bgImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity(), FragmentManager.OnBackStackChangedList
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
         navController  = findNavController(R.id.nav_host_fragment)
+        bgImage = findViewById(R.id.mainBgImage)
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

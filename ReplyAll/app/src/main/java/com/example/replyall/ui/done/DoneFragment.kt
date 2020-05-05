@@ -15,12 +15,8 @@ import com.example.replyall.ui.home.HomeViewModel
 
 class DoneFragment : Fragment() {
 
-    private lateinit var doneViewModel: DoneViewModel
     lateinit var homeViewModel: HomeViewModel
-    lateinit var textView1: TextView
-    lateinit var textView2: TextView
-    lateinit var textView3: TextView
-    lateinit var textView4: TextView
+    lateinit var finalText: TextView
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -28,24 +24,33 @@ class DoneFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         homeViewModel = ViewModelProvider(requireActivity()).get(HomeViewModel::class.java)
-        doneViewModel =
-                ViewModelProviders.of(this).get(DoneViewModel::class.java)
-        doneViewModel.string1 = homeViewModel.how1
-        Log.i("HVM", homeViewModel.how1)
-        doneViewModel.string2 = homeViewModel.how2
-        doneViewModel.string3 = homeViewModel.how3
-        doneViewModel.string4 = "help"
 
         val root = inflater.inflate(R.layout.fragment_done, container, false)
-        textView1 = root.findViewById(R.id.Done_1)
-        textView2 = root.findViewById(R.id.Done_2)
-        textView3 = root.findViewById(R.id.Done_3)
-        textView4 = root.findViewById(R.id.Done_4)
+        finalText = root.findViewById(R.id.finalMessage)
 
-        textView1.text = doneViewModel.string1
-        textView2.text = doneViewModel.string2
-        textView3.text = doneViewModel.string3
-        textView4.text = doneViewModel.string4
+        if(homeViewModel.msgSelected == 1){
+
+            finalText.text = "Pretty adjective, things are just ${homeViewModel.how1}. I’m a little " +
+                    "bummed about ${homeViewModel.how2} today though. But one highlight " +
+                    "${homeViewModel.how3}, which is cool!"
+        } else if(homeViewModel.msgSelected == 2){
+            finalText.text = "I’ll probably ${homeViewModel.doing1} for a while, then take some time to ${homeViewModel.doing2} my " +
+                    "${homeViewModel.doing3}. Turns out my schedule has been pretty ${homeViewModel.doing4}."
+        } else if(homeViewModel.msgSelected == 3){
+            finalText.text = "I’ve been doing a lot of ${homeViewModel.self1} which makes me feel ${homeViewModel.self2}. My goal " +
+                    "is to be better at ${homeViewModel.self3} by the time this is over. But honestly " +
+                    "I really just like to ${homeViewModel.self4} to relax."
+        } else if(homeViewModel.msgSelected == 4){
+            finalText.text = "${homeViewModel.news1}, I decided to ${homeViewModel.news2} the news." +
+                    " At this point I try and ${homeViewModel.news3} " +
+                    "the news because it makes me feel ${homeViewModel.news4} whenever I read them."
+        } else {
+            finalText.text = "My biggest update is ${homeViewModel.what1}. " +
+                    "Not a whole lot is changing, just sticking to my ${homeViewModel.what2} daily " +
+                    "routine. How about you? Anything ${homeViewModel.what3} "  + "${homeViewModel.what4}" +
+                    " happen since we last chatted?"
+        }
+
         return root
     }
 }
