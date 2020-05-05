@@ -12,6 +12,7 @@ class HomeViewModel(app: Application) : AndroidViewModel(app) {
     val msgRepo = MessageRepository(app)
 
     var msgSelected = msgRepo.selectedInitial
+    var synonymMap = msgRepo.synList
 
     // how are you?
     var how1 = ""

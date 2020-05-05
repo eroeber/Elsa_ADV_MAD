@@ -14,6 +14,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 class MessageRepository(val app: Application) {
     var selectedInitial = 0
 
+
     private var retrofit: Retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(MoshiConverterFactory.create())
@@ -24,22 +25,36 @@ class MessageRepository(val app: Application) {
         service = retrofit.create(WordsAPIService::class.java)
     }
 
-    private val synList = MutableLiveData<SynonymsResponse>()
+    val synList = MutableLiveData<HashMap<String, String>>()
 
-    fun getSynonymList(forWord: String){
-        Log.i(LOG_TAG, "synonym list")
+    fun getSynonymList(forWords: HashMap<String, String>){
+        val responseMap = hashMapOf<String, String>()
         CoroutineScope(Dispatchers.IO).launch {
             if(NetworkHelper.networkConnected(app)){
-                val response = service.getSynonyms("bad").execute()
-                Log.i(LOG_TAG, "hello response")
-                if(response.body() != null){
+                for((word, pos) in forWords) {
+
+                    val response = service.getSynonyms(word).execute()
                     val responseBody = response.body()
-                    Log.i(LOG_TAG, "hello not null response")
-                    synList.postValue(responseBody)
-                    Log.i(LOG_TAG, synList.toString())
-                } else {
-                    Log.e(LOG_TAG,"could not search the word")
+
+                    if(responseBody != null){
+                        Log.i(LOG_TAG, "hello not null response")
+                        if(responseBody.containsKey(pos)) {
+                            //got synonyms for the right part of speech
+                            //get the list of syn
+                            val allSyns = responseBody[pos]
+                            //choose the first one
+                            responseMap[word] = allSyns?.syn!!.elementAt(0)
+                        } else {
+                            //can't find synonyms for the desired word and part of speech, just use the user inputted word
+                            responseMap[word] = word
+                        }
+
+                    } else {
+                        Log.e(LOG_TAG,"could not search the word")
+                    }
                 }
+                Log.i(LOG_TAG, responseMap.toString())
+                synList.postValue(responseMap)
             }
         }
     }

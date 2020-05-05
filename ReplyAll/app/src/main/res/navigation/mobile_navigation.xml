@@ -25,11 +25,11 @@
         android:id="@+id/navigation_build"
         android:name="com.example.replyall.ui.buildMessage.buildFragment"
         android:label="@string/title_build"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_build" />
     <fragment
         android:id="@+id/build_message"
         android:name="com.example.replyall.ui.buildMessage.buildFragment"
-        android:label="build_message"
+        android:label="Build Response"
         tools:layout="@layout/fragment_how" >
         <action
             android:id="@+id/action_build_message_to_navigation_done"

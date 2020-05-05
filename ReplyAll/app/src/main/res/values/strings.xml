@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ReplyAll</string>
     <string name="title_home">REPLY ALL</string>
-    <string name="title_done">Done!L</string>
+    <string name="title_done">Done!</string>
     <string name="title_build">Build Response</string>
     <string name="build_fragment">build fragment</string>
     <string name="how_are_you">How are you?</string>
@@ -13,10 +13,10 @@
     <string name="reply">REPLY</string>
     <string name="pretty">Pretty</string>
     <string name="how_adj_1">adjective...</string>
-    <string name="how_things_are_just">, things are just</string>
+    <string name="how_things_are_just">things are just</string>
     <string name="but_one_highlight_is">But one highlight is</string>
     <string name="personal_detail">personal detail</string>
-    <string name="which_is_cool">. Which is cool!</string>
+    <string name="which_is_cool">Which is cool!</string>
     <string name="i_ll_probably">I\'ll probably</string>
     <string name="verb">verb...</string>
     <string name="for_a_while_then">for a while, then</string>
@@ -27,10 +27,10 @@
     <string name="my_schedule_has_been_pretty">My schedule has been pretty</string>
     <string name="i_ve_been_doing_a_lot_of">I\'ve been doing a lot of</string>
     <string name="to_relax">to relax.</string>
-    <string name="but_honestly_i_really_like_to">But honestly I really like to</string>
+    <string name="but_honestly_i_really_like_to">when this is over. But honestly I really like to</string>
     <string name="which">, which</string>
-    <string name="makes_me_feel">makes me feel</string>
-    <string name="my_goal_is_to">. My goal is to</string>
+    <string name="makes_me_feel">which makes me feel</string>
+    <string name="my_goal_is_to">My goal is to be better at</string>
     <string name="be_better_at">be better at</string>
     <string name="activity">activity...</string>
     <string name="when_this_is_over">when this is over</string>
@@ -42,11 +42,13 @@
     <string name="whenever_i_read_them">whenever I read them.</string>
     <string name="my_biggest_update_is">My biggest update is</string>
     <string name="not_a">Not a</string>
-    <string name="whole_lot_is_chenging_just_sticking_to_my">whole lot is chenging, just sticking to my</string>
+    <string name="whole_lot_is_chenging_just_sticking_to_my">Not a whole lot is changing, just sticking to my</string>
     <string name="daily_routine_how_about_you_anything">daily routine. How about you? Anything</string>
     <string name="adverb">adverb...</string>
     <string name="happen_since_we_last_chatted">happen since we last chatted?</string>
     <string name="adjective">adjective...</string>
     <string name="reply_all" />
     <string name="turns_out">. Turns out</string>
+    <string name="welcome_pick_a_message_you_d_like_to_generate_a_response_to">Generate a message to a phenomenally repetitive question:</string>
+    <string name="done_you_re_response_is_ready">Done! You\'re response is ready:</string>
 </resources>

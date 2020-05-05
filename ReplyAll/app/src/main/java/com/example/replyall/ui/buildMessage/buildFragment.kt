@@ -60,7 +60,13 @@ class buildFragment : Fragment() {
                 homeViewModel.how1 = edit1.text.toString()
                 homeViewModel.how2 = edit2.text.toString()
                 homeViewModel.how3 = edit3.text.toString()
-                homeViewModel.msgRepo.getSynonymList("street")
+
+                //construct map with the following structure (User's word, desired part of speech)
+                val inputMap = hashMapOf<String, String>()
+                inputMap[homeViewModel.how1] = "adjective"
+                inputMap[homeViewModel.how2] = "adjective"
+                homeViewModel.msgRepo.getSynonymList(inputMap)
+
                 navController.navigate(R.id.action_build_message_to_navigation_done)
             }
             root
@@ -78,6 +84,13 @@ class buildFragment : Fragment() {
                 homeViewModel.doing2 = edit2.text.toString()
                 homeViewModel.doing3 = edit3.text.toString()
                 homeViewModel.doing4 = edit4.text.toString()
+
+                val inputMap = hashMapOf<String, String>()
+                inputMap[homeViewModel.doing1] = "verb"
+                inputMap[homeViewModel.doing2] = "verb"
+                inputMap[homeViewModel.doing4] = "adjective"
+                homeViewModel.msgRepo.getSynonymList(inputMap)
+
                 navController.navigate(R.id.action_build_message_to_navigation_done)
             }
             root
@@ -95,6 +108,13 @@ class buildFragment : Fragment() {
                 homeViewModel.self2 = edit2.text.toString()
                 homeViewModel.self3 = edit3.text.toString()
                 homeViewModel.self4 = edit4.text.toString()
+
+                val inputMap = hashMapOf<String, String>()
+                inputMap[homeViewModel.self1] = "verb"
+                inputMap[homeViewModel.self2] = "adjective"
+                inputMap[homeViewModel.self4] = "verb"
+                homeViewModel.msgRepo.getSynonymList(inputMap)
+
                 navController.navigate(R.id.action_build_message_to_navigation_done)
             }
             root
@@ -112,6 +132,13 @@ class buildFragment : Fragment() {
                 homeViewModel.news2 = edit2.text.toString()
                 homeViewModel.news3 = edit3.text.toString()
                 homeViewModel.news4 = edit4.text.toString()
+
+                val inputMap = hashMapOf<String, String>()
+                inputMap[homeViewModel.news2] = "verb"
+                inputMap[homeViewModel.news3] = "verb"
+                inputMap[homeViewModel.news4] = "adjective"
+                homeViewModel.msgRepo.getSynonymList(inputMap)
+
                 navController.navigate(R.id.action_build_message_to_navigation_done)
             }
             root
@@ -129,6 +156,13 @@ class buildFragment : Fragment() {
                 homeViewModel.what2 = edit2.text.toString()
                 homeViewModel.what3 = edit3.text.toString()
                 homeViewModel.what4 = edit4.text.toString()
+
+                val inputMap = hashMapOf<String, String>()
+                inputMap[homeViewModel.what2] = "verb"
+                //inputMap[homeViewModel.what3] = "adverb"
+                inputMap[homeViewModel.what4] = "adjective"
+                homeViewModel.msgRepo.getSynonymList(inputMap)
+
                 navController.navigate(R.id.action_build_message_to_navigation_done)
             }
             root

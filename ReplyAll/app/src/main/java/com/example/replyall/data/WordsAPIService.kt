@@ -7,5 +7,5 @@ import retrofit2.http.Path
 
 interface WordsAPIService {
     @GET("${API_KEY}/{word}/json")
-    fun getSynonyms(@Path("word") word: String): Call<SynonymsResponse>
+    fun getSynonyms(@Path("word") word: String): Call<Map<String, Synonyms>>
 }
